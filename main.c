@@ -3,12 +3,12 @@
   작 성 자: 60251629 강영현
 */
 include<stdio.h>
-#include <stdlib.h>
+
 
 int main()
 {
 
-	system("chcp 65001");   
+	   
 	char initial; // 이니셜 
 	float height; // 키 
 	float weight; // 몸무게 
