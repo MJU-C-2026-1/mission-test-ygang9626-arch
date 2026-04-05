@@ -8,14 +8,14 @@ include<stdio.h>
 int main()
 {
 
-	   
+	
 	char initial; // 이니셜 
 	float height; // 키 
 	float weight; // 몸무게 
 	int age;      // 나이 
 	char gender;  // 성별
-	
-	
+	int a,b;
+	int result;
 	
 	printf(" 익명 프로필을 만들어드립니다.\n");
 	printf(" ===================================\n");
@@ -30,7 +30,8 @@ int main()
 	scanf(" %f", &weight);
 
 	printf(" 당신의 나이를 입력하세요: ");
-	scanf(" %d", &age);
+	scanf("%d %d", &a, &b);
+	result = a + b;
 	
 	printf(" 당신의 성별(X,Y)을 입력하세요: ");
 	scanf(" %c", &gender);
@@ -39,9 +40,10 @@ int main()
 	printf("=======================\n"); 
 	printf("당신의 이니셜: %c\n", initial);
 	printf("당신의 성별: %c\n", gender);
-	printf("당신의 나이: %d\n", age);
-	printf("당신의 키: %.1f\n", height);
-	printf("당신의 몸무게: %.2f\n", weight);
+	printf("당신의 나이: %d세\n", result);
+	printf("당신의 키: %.1fcm\n", height);
+	printf("당신의 몸무게: %.2fkg\n", weight);
 
 	return 0;
 }
+
